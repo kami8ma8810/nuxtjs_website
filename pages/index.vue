@@ -2,14 +2,14 @@
   <!-- template直下には１つのHTMLのみ ここではdiv（それより下層はいくつでもOK） -->
   <div>
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('/images/home-bg.jpg')">
+    <header class="masthead" style="background-image: url('/images/hero-bg-index.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+              <h1>おいしい焼肉の食べ方</h1>
+              <span class="subheading">生きた命を余す事なく大事に頂く</span>
             </div>
           </div>
         </div>
@@ -23,26 +23,32 @@
           <div class="post-preview">
             <a href="post.html">
               <h2 class="post-title">
-                Man must explore, and this is exploration at its greatest
+                赤身はサッと脂はじっくり
               </h2>
               <h3 class="post-subtitle">
-                Problems look mighty small from 150 miles up
-              </h3>
+              赤身は脂よりもタンパク質が強く、固まる温度が早いので、焼きすぎるとどんどん硬くなる。脂が多いものはある程度焼いても柔らかさが失われないため、しっかり火を通す。</h3>
             </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2019</p>
+            <p class="post-meta">2021-06-19</p>
           </div>
           <hr>
           <div class="post-preview">
             <a href="post.html">
               <h2 class="post-title">
-                I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                タンは網の真ん中で
               </h2>
+              <h3 class="post-subtitle">表面に網目の焼き目をつけつつ、中まで火を通しすぎないようにする。最初に焼いた面が少し反りだしたらひっくり返す。</h3>
             </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 18, 2019</p>
+            <p class="post-meta">2021-06-19</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+								迷ったら店員さんに聞く
+              </h2>
+              <h3 class="post-subtitle">焼肉屋さんにもよるが、店員さんがしっかり知識を持っている場合はいろいろ聞いてみるのが吉。</h3>
+            </a>
+            <p class="post-meta">2021-06-19</p>
           </div>
         </div>
       </div>
@@ -89,6 +95,9 @@
     width: 100%;
     background-color: #212529;
     opacity: 0.5;
+  }
+  .post-subtitle{
+    @include clamp(1);
   }
 
   footer {

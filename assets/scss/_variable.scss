@@ -11,3 +11,10 @@ $colorDarkPink: #ff6666;
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+@mixin clamp($line:2){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}
